@@ -20,7 +20,7 @@ const Header = ({ title, onMenuPress, onAddPress }) => {
         {onMenuPress ? <TouchableOpacity onPress={onMenuPress}>
           <Image
             style={styles.icon}
-            source={MENU}
+            source={require('../../assets/images/hamburger.png')}
           />
         </TouchableOpacity> : <></>}
 
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   icon: {
-    width: 40,
+    width: 25,
     height: 40,
     resizeMode: 'contain',
     tintColor: WHITE,

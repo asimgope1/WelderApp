@@ -22,7 +22,7 @@ const DashBoard = ({ navigation }) => {
         return (
             <TouchableOpacity
                 style={{ ...styles.cardContainer, borderLeftWidth: 5, borderLeftColor: BRAND }}
-                onPress={() => navigation.navigate('Details', { item: item })}
+            // onPress={() => navigation.navigate('Details', { item: item })}
             >
                 <View style={styles.cardContent}>
                     <View style={styles.cardHeader}>
@@ -101,8 +101,8 @@ const DashBoard = ({ navigation }) => {
 
                         <>
                             <Header
+                                onMenuPress={() => navigation.navigate('Registration')}
                                 title="Welder Jobs"
-                                onMenuPress={() => navigation.toggleDrawer()}
                             />
 
 

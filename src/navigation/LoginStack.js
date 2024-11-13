@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splash from '../Pages/Splash/Splash';
 import Login from '../Pages/Login/Login';
 import DashBoard from '../Pages/DashBoard/DashBoard';
+import Registration from '../Pages/Registratration/Registration';
 
 
 const Stack = createNativeStackNavigator();
@@ -23,6 +24,11 @@ export default LoginStack = () => {
         options={{ headerShown: false }}
         name="DashBoard"
         component={DashBoard}
+      />
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="Registration"
+        component={Registration}
       />
 
 
